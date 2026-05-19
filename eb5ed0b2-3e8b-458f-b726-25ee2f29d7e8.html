@@ -12,9 +12,8 @@
     * { box-sizing: border-box; }
     body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; margin: 0; padding: 20px 14px; background: #f8fafc; color: #0f172a; line-height: 1.45; font-size: 15px; }
     .wrap { max-width: 480px; margin: 0 auto; }
-    .head { margin-bottom: 12px; }
-    .head .tipo { font-size: 0.7rem; text-transform: uppercase; letter-spacing: .05em; color: #64748b; margin: 0 0 2px; }
-    .head .num { font-size: 1.125rem; font-weight: 700; margin: 0; letter-spacing: -.02em; }
+    .ref-num { font-size: 1.35rem; font-weight: 700; margin: 0; letter-spacing: -.02em; line-height: 1.2; }
+    .ref-tipo { font-size: 0.8rem; color: #64748b; margin: 4px 0 0; }
     section { background: #fff; border-radius: 10px; padding: 14px 16px; margin-bottom: 12px; box-shadow: 0 1px 2px rgba(0,0,0,.06); }
     h2 { font-size: 0.75rem; text-transform: uppercase; letter-spacing: .04em; color: #64748b; margin: 0 0 10px; font-weight: 600; }
     .line { margin: 4px 0; font-size: 0.9rem; }
@@ -31,17 +30,18 @@
 </head>
 <body>
   <div class="wrap">
-    <header class="head">
-      <p class="tipo">Scheda Lavoro</p>
-      <p class="num">SL 7-6</p>
-    </header>
+    <section>
+      <h2>Riferimento</h2>
+      <p class="ref-num">SL 7-6</p>
+      <p class="ref-tipo">Scheda Lavoro</p>
+    </section>
     <section>
       <h2>Dati macchina</h2>
       <div class="line">Tipo: Sega circolare</div><div class="line">Marca: DeWalt</div><div class="line">Matricola: 2020</div><div class="line">Accessori: prolunga</div>
     </section>
     <section>
       <h2>Registro lavorazioni</h2>
-      <p class="pre">rm — revisione meccanica</p>
+      <p class="pre">[revisione meccanica]</p>
     </section>
     <section>
       <h2>Ricambi</h2>
