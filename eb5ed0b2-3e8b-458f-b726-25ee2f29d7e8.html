@@ -7,35 +7,48 @@
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
-  <title>Scheda Lavoro — SL 7-6</title>
+  <title>Informazioni lavoro</title>
   <style>
     * { box-sizing: border-box; }
-    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; margin: 0; padding: 24px 16px; background: #f8fafc; color: #0f172a; line-height: 1.5; }
-    .wrap { max-width: 420px; margin: 0 auto; }
-    h1 { font-size: 1.25rem; margin: 0 0 4px; }
-    .sub { color: #64748b; font-size: 0.875rem; margin-bottom: 20px; }
-    .card { background: #fff; border-radius: 12px; padding: 20px; box-shadow: 0 1px 3px rgba(0,0,0,.08); margin-bottom: 16px; }
-    .row { display: flex; justify-content: space-between; gap: 12px; padding: 8px 0; border-bottom: 1px solid #f1f5f9; }
-    .row:last-child { border-bottom: none; }
-    .lbl { color: #64748b; font-size: 0.8125rem; }
-    .val { font-weight: 600; font-size: 0.875rem; text-align: right; }
-    .stato { display: inline-block; background: #dbeafe; color: #1d4ed8; padding: 4px 10px; border-radius: 999px; font-size: 0.8125rem; }
-    .note { font-size: 0.875rem; color: #475569; margin-top: 12px; white-space: pre-wrap; }
-    footer { text-align: center; font-size: 0.75rem; color: #94a3b8; margin-top: 24px; }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; margin: 0; padding: 20px 14px; background: #f8fafc; color: #0f172a; line-height: 1.45; font-size: 15px; }
+    .wrap { max-width: 480px; margin: 0 auto; }
+    section { background: #fff; border-radius: 10px; padding: 14px 16px; margin-bottom: 12px; box-shadow: 0 1px 2px rgba(0,0,0,.06); }
+    h2 { font-size: 0.75rem; text-transform: uppercase; letter-spacing: .04em; color: #64748b; margin: 0 0 10px; font-weight: 600; }
+    .line { margin: 4px 0; font-size: 0.9rem; }
+    .muted { color: #94a3b8; font-size: 0.875rem; }
+    .pre { white-space: pre-wrap; font-size: 0.9rem; margin: 0; }
+    .tbl { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
+    .tbl th, .tbl td { text-align: left; padding: 6px 4px; border-bottom: 1px solid #f1f5f9; vertical-align: top; }
+    .tbl th { color: #64748b; font-weight: 600; font-size: 0.75rem; }
+    .num { text-align: right; white-space: nowrap; width: 3rem; }
+    .money-row { display: flex; justify-content: space-between; padding: 5px 0; font-size: 0.9rem; }
+    .money-row strong { font-weight: 600; }
+    .dates .money-row span:first-child { color: #64748b; }
   </style>
 </head>
 <body>
   <div class="wrap">
-    <h1>Scheda Lavoro</h1>
-    <p class="sub">Riferimento SL 7-6</p>
-    <div class="card">
-      <div class="row">
-        <span class="lbl">Stato</span>
-        <span class="val"><span class="stato">Accettata</span></span>
-      </div>
-      <p class="note">Macchina: Sega circolare DeWalt</p>
-    </div>
-    <footer>Aggiornato: 2026-05-19 11:48</footer>
+    <section>
+      <h2>Dati macchina</h2>
+      <div class="line">Tipo: Sega circolare</div><div class="line">Marca: DeWalt</div><div class="line">Matricola: 2020</div><div class="line">Accessori: prolunga</div>
+    </section>
+    <section>
+      <h2>Registro lavorazioni</h2>
+      <p class="pre">rm — revisione meccanica</p>
+    </section>
+    <section>
+      <h2>Ricambi</h2>
+      <table class="tbl"><thead><tr><th>Articolo</th><th>Qtà</th></tr></thead><tbody><tr><td>cavo</td><td class="num">1</td></tr></tbody></table>
+    </section>
+    <section>
+      <div class="money-row"><span>Acconto</span><strong>€0.00</strong></div>
+      <div class="money-row"><span>Totale da pagare</span><strong>€20.74</strong></div>
+    </section>
+    <section class="dates">
+      <div class="money-row"><span>Data entrata</span><span>19/05/2026</span></div>
+      <div class="money-row"><span>Data riparazione</span><span>—</span></div>
+      <div class="money-row"><span>Data uscita</span><span>—</span></div>
+    </section>
   </div>
 </body>
 </html>
